@@ -4,6 +4,7 @@ import "./App.css";
 
 import { Provider } from "react-redux";
 import store from "./Redux/store";
+import ChildComp from "./Child";
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
               Learn React
             </a>
           </header>
+          <ChildComp />
         </div>
       </Provider>
     );
