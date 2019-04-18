@@ -8,6 +8,7 @@ import ChildComp from "./Child";
 
 class App extends Component {
   render() {
+    console.log("parent render");
     return (
       <Provider store={store}>
         <div className="App">

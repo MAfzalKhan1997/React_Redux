@@ -17,6 +17,7 @@ class Child extends Component {
   }
 
   render() {
+    console.log("child render");
     return <div />;
   }
 }
