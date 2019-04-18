@@ -1,7 +1,7 @@
 const reducer = (state = {}, action) => {
   switch (action.type) {
     case "UPDATE_USER": {
-      return { ...state, user: action.user };
+      return { ...state, user: action.resp };
     }
     case "REMOVE_USER": {
       return { ...state, user: null };

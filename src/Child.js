@@ -8,7 +8,8 @@ class Child extends Component {
 
   componentDidMount() {
     console.log("props", this.props);
-    this.props.updateUser({ name: "Muhammad Afzal Khan", Age: "21" });
+    // this.props.updateUser({ name: "Muhammad Afzal Khan", Age: "21" });
+    this.props.updateUser();
   }
 
   static getDerivedStateFromProps(props) {
@@ -31,7 +32,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    updateUser: user => dispatch(updateUser(user))
+    // updateUser: (user) => dispatch(updateUser(user))
+    updateUser: () => dispatch(updateUser())
   };
 };
 
